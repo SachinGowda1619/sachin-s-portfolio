@@ -1,0 +1,27 @@
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list-container ul {
+    list-style-type: none;
+}
+
+.menu-list-container li {
+    color: white;
+    font-size: 20px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.toggle-image {
+    padding: 1rem 10rem 0 1.5rem;
+}
+
+.cross-image {
+    padding: 1.5rem 10rem 0 1.5rem;
+}
