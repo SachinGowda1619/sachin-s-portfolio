@@ -1,6 +1,7 @@
 body {
     background-image: url('../src/assets/header.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0;
     font-family: "Baloo Paaji 2";
 }

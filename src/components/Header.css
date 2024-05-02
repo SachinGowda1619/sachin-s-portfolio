@@ -1,6 +1,25 @@
+.header {
+    transition: 0.5s;
+}
+
+.header-scrolled {
+    background-color: white;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .menu-container {
     display: flex;
     justify-content: flex-end;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu-container-scrolled {
+    color: #695aa6;
+    transition: 0.5s;
 }
 
 .menu-list-container ul {
@@ -8,20 +27,31 @@
 }
 
 .menu-list-container li {
-    color: white;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .menu-list {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
+    transition: 0.5s;
 }
 
-.toggle-image {
-    padding: 1rem 10rem 0 1.5rem;
+.menu-list-scrolled {
+    margin-top: 1rem;
+    transition: 0.5s;
 }
 
 .cross-image {
     padding: 1.5rem 10rem 0 1.5rem;
+}
+
+.cross-image-scrolled {
+    padding: 0 10rem 0 1.5rem;
+}
+
+.menu-list li:hover {
+    cursor: pointer;
+    color: #695aa6;
 }
