@@ -1,0 +1,68 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.portfolio-image-container {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+.work-image {
+    width: 22rem;
+    height: 22rem;
+    transition: 0.25s;
+    position: relative;
+}
+
+.work-image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.portfolio-what {
+    color: #53565a;
+    font-size: 20px;
+}
+
+.portfolio-header {
+    color: #695aa6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.image-inside-1 {
+    position: absolute;
+    top: 127rem;
+    left: 17rem;
+}
+
+.image-inside-2 {
+    position: absolute;
+    top: 127rem;
+    left: 41rem;
+}
+
+.image-inside-3 {
+    position: absolute;
+    top: 127rem;
+    left: 65rem;
+}
+
+.portfolio-header {
+    color: #695aa6;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.portfolio-content {
+    color: #53565a;
+    font-size: 20px;
+    height: 30vh;
+    margin: 0;
+}
