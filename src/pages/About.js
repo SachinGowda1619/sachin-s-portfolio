@@ -1,14 +1,27 @@
 import React from 'react'
+import './About.css';
+import man_image from '../assets/man.png'
 
 const About = () => {
   return (
-    <div>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's nter took a galley of type and scrnter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley nter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15dnter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley nter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 00s, when an unknown printer took a galley standard dummy text ever since the 1500s, when an unknown priof type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap i
+    <div className='about'>
+      <img className='about-image' src={man_image} alt='About_Image'/>
+      <div className='about-text'>
+        <div className='about-who'>
+          Who Am I?
+        </div>
+        <div className='about-header'>
+          About Me
+        </div>
+        <div className='about-content'>
+          I am a full stack developer with 4+ years of work experience
+          <br></br>
+          I have a master degree from University of Mysore
+          <br></br>
+          I can work on front end design of both web and mobile applications and also on the backend side of creating and implementing API's and database interactions
+        </div>
+        <button>Download CV</button>
+      </div>
     </div>
   )
 }
