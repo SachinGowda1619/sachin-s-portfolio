@@ -1,10 +1,10 @@
 .header {
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .header-scrolled {
     background-color: white;
-    transition: 0.5s;
+    transition: 0.25s;
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,12 +14,12 @@
     display: flex;
     justify-content: flex-end;
     color: white;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .menu-container-scrolled {
     color: #695aa6;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .menu-list-container ul {
@@ -35,12 +35,12 @@
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .menu-list-scrolled {
     margin-top: 1rem;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .cross-image {
