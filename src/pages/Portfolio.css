@@ -5,64 +5,114 @@
     margin-top: 10rem;
 }
 
-.portfolio-image-container {
-    display: flex;
-    gap: 2rem;
-    margin: 3rem;
-}
-
-.work-image {
-    width: 22rem;
-    height: 22rem;
-    transition: 0.25s;
-    position: relative;
-}
-
-.work-image:hover {
-    opacity: 0.5;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
 .portfolio-what {
     color: #53565a;
     font-size: 20px;
 }
 
-.portfolio-header {
+.portfolio-main-header {
     color: #695aa6;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.image-inside-1 {
-    position: absolute;
-    top: 127rem;
-    left: 17rem;
+.portfolio-main-container {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 10rem;
 }
 
-.image-inside-2 {
-    position: absolute;
-    top: 127rem;
-    left: 41rem;
+.portfolio-container {
+   position: relative;
+   width: 22rem;
+   height: 22rem;
 }
 
-.image-inside-3 {
+.animation-div {
+    width: 10%;
+    height: 10%;
+    display: none;
     position: absolute;
-    top: 127rem;
-    left: 65rem;
+    top: 45%;
+    left: 45%;
+}
+
+.work-image {
+    width: 100%;
+    height: 100%;
+    transition: 0.25s;
+}
+
+.work-image:hover {
+    cursor: pointer;
+}
+
+.image-inside {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    transition-delay: 5s;
 }
 
 .portfolio-header {
     color: #695aa6;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+    padding-top: 8.5rem;
 }
 
 .portfolio-content {
     color: #53565a;
-    font-size: 20px;
-    height: 30vh;
+    font-size: 17px;
     margin: 0;
+}
+
+.portfolio-container:hover .animation-div {
+    animation-name: zoomInOut;
+    animation-duration: 0.25s;
+    display: block;
+    position: inherit;
+}
+
+.portfolio-container:hover .image-inside {
+    display: block;
+}
+
+@keyframes zoomInOut {
+    25% {
+        width: 25%;
+        height: 25%;
+        background-color: rgb(195 195 225 / 55%);
+        position: absolute;
+        top: 37.5%;
+        left: 37.5%;
+    }
+    50% {
+        width: 50%;
+        height: 50%;
+        background-color: rgb(195 195 225 / 55%);
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+    75% {
+        width: 75%;
+        height: 75%;
+        background-color: rgb(195 195 225 / 55%);
+        position: absolute;
+        top: 12.5%;
+        left: 12.5%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(195 195 225 / 55%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
