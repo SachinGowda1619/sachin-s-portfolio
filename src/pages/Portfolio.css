@@ -28,19 +28,9 @@
    height: 22rem;
 }
 
-.animation-div {
-    width: 10%;
-    height: 10%;
-    display: none;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-}
-
 .work-image {
     width: 100%;
     height: 100%;
-    transition: 0.25s;
 }
 
 .work-image:hover {
@@ -49,12 +39,15 @@
 
 .image-inside {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
     text-align: center;
-    display: none;
-    transition-delay: 5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: width 0.25s, height 0.25s, top 0.25s, left 0.25s, background-color 0.25s;
 }
 
 .portfolio-header {
@@ -62,57 +55,28 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-    padding-top: 8.5rem;
+    display: none;
 }
 
 .portfolio-content {
     color: #53565a;
     font-size: 17px;
     margin: 0;
-}
-
-.portfolio-container:hover .animation-div {
-    animation-name: zoomInOut;
-    animation-duration: 0.25s;
-    display: block;
-    position: inherit;
+    display: none;
 }
 
 .portfolio-container:hover .image-inside {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+}
+
+.portfolio-container:hover .portfolio-header {
     display: block;
 }
 
-@keyframes zoomInOut {
-    25% {
-        width: 25%;
-        height: 25%;
-        background-color: rgb(195 195 225 / 55%);
-        position: absolute;
-        top: 37.5%;
-        left: 37.5%;
-    }
-    50% {
-        width: 50%;
-        height: 50%;
-        background-color: rgb(195 195 225 / 55%);
-        position: absolute;
-        top: 25%;
-        left: 25%;
-    }
-    75% {
-        width: 75%;
-        height: 75%;
-        background-color: rgb(195 195 225 / 55%);
-        position: absolute;
-        top: 12.5%;
-        left: 12.5%;
-    }
-    100% {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(195 195 225 / 55%);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+.portfolio-container:hover .portfolio-content {
+    display: block;
 }

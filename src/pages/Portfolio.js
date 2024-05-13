@@ -16,7 +16,6 @@ const Portfolio = () => {
                     <h3 className='portfolio-header'>Web designing</h3>
                     <p className='portfolio-content'>Category: Web templates</p>
                 </div>
-                <div className='animation-div'></div>
             </div>
             <div className='portfolio-container'>
                 <img className='work-image' src={portfolio_image_2} alt='My work'/>
@@ -24,7 +23,6 @@ const Portfolio = () => {
                     <h3 className='portfolio-header'>Web designing</h3>
                     <p className='portfolio-content'>Category: Web templates</p>
                 </div>
-                <div className='animation-div'></div>
             </div>
             <div className='portfolio-container'>
                 <img className='work-image' src={portfolio_image_3} alt='My work'/>
@@ -32,7 +30,6 @@ const Portfolio = () => {
                     <h3 className='portfolio-header'>Web designing</h3>
                     <p className='portfolio-content'>Category: Web templates</p>
                 </div>
-                <div className='animation-div'></div>
             </div>
         </div>
     </div>
