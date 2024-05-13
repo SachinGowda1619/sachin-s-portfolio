@@ -32,6 +32,15 @@ const Portfolio = () => {
                 </div>
             </div>
         </div>
+        <div className='contact-me'>
+            <div className='contact-me-left'>
+                <h2>Want to work with me?</h2>
+                <p>Always feel free to contact me</p>
+            </div>
+            <div className='contact-me-right'>
+                <button>Contact me</button>
+            </div>
+        </div>
     </div>
   )
 }
