@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import './About.css';
 import man_image from '../assets/man.png';
 import pencil_case from '../assets/pencil-case.svg';
 import responsive from '../assets/responsive.svg';
-import toolbox from '../assets/toolbox.svg'
-import analytics from '../assets/analytics.svg'
+import toolbox from '../assets/toolbox.svg';
+import analytics from '../assets/analytics.svg';
 
 const About = () => {
   return (

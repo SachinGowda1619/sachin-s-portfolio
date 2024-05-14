@@ -1,8 +1,8 @@
-import React from 'react'
-import './Portfolio.css'
-import portfolio_image_1 from '../assets/folio-1.jpg'
-import portfolio_image_2 from '../assets/folio-2.jpg'
-import portfolio_image_3 from '../assets/folio-3.jpg'
+import React from 'react';
+import './Portfolio.css';
+import portfolio_image_1 from '../assets/folio-1.jpg';
+import portfolio_image_2 from '../assets/folio-2.jpg';
+import portfolio_image_3 from '../assets/folio-3.jpg';
 
 const Portfolio = () => {
   return (

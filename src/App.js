@@ -1,7 +1,8 @@
 import './App.css';
-import Home from '././pages/Home'
-import About from '././pages/About'
+import Home from '././pages/Home';
+import About from '././pages/About';
 import Portfolio from './pages/Portfolio';
+import Testmonial from './pages/Testmonial';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Home />
       <About />
       <Portfolio />
+      <Testmonial />
     </div>
   );
 }
