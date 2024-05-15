@@ -10,11 +10,11 @@ const App = () => {
   return (
     <div className='app'>
       <Home />
-      <About />
+      {/* <About />
       <Portfolio />
       <Testmonial />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
