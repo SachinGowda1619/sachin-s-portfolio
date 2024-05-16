@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 const Home = () => {
   const [isScrolled, setIscScrolled] = useState(false);
 
+  console.log("sef", window.innerWidth)
+
   // useEffect(() => {
 
   //   const handleNavBarScroll = () => {
@@ -35,25 +37,23 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='header'>
-        <div className='menu-container'>
-          <div className='menu-list-container'>
-            <ul className='menu-list'>
-              <li>Home</li>
-              <li>About</li>
-              <li>Portfolio</li>
-              <li>Testmonial</li>
-              <li>Contact</li>
-            </ul>
-          </div>
+      <div className='home-shadow'>
+        <div className='header'>
+          <ul className='menu-list'>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Testmonial</li>
+            <li>Contact</li>
+          </ul>
           <img className='cross-image' src={isScrolled ? cross_image : cross_image_white} alt='Close'></img>
         </div>
-      </div>
-      <div className='home-container'>
-        <h2>HI!</h2>
-        <h1>I am Sachin Gowda</h1>
-        <p>FULL STACK DEVELOPER</p>
-        <button>Visit my works</button>
+        <div className='home-container'>
+          <h2>HI!</h2>
+          <h1>I am Sachin Gowda</h1>
+          <p>FULL STACK DEVELOPER</p>
+          <button>Visit My Works</button>
+        </div>
       </div>
     </div>
   );
