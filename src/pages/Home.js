@@ -1,8 +1,27 @@
-import React from 'react'
-import cross_image from './../assets/cross.svg'
+import React, { useEffect } from 'react'
+import cross_image from './../assets/cross_white.svg'
 import './Home.css';
 
 const Home = () => {
+
+    useEffect(() => {
+        const handleResize = () => {
+            console.log("Window values => 'W': ", window.innerWidth, ", 'H': ", window.innerHeight);
+        }
+
+        const handleScroll = () => {
+            console.log("Scrolled values => 'X': ", window.scrollX, ", 'Y': ", window.scrollY);
+        }
+        
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
   return (
     <div className='home'>
         <div className='home-shadow'>
@@ -30,36 +49,7 @@ const Home = () => {
                     Visit My Works
                 </button>
             </div>
-            <div className='afewafa'>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-                <div>
-                    segsdrg
-                </div>
-
-            </div>
+            
         </div>
     </div>
   )

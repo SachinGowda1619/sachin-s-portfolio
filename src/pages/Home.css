@@ -1,6 +1,7 @@
 .home {
-    background-image: url('./../assets/background.jpg');
+    background-image: url('./../assets/background_large.jpg');
     background-size: cover;
+    background-position: top;
 }
 
 .home-shadow {
@@ -10,13 +11,64 @@
 .header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    right: 13vw;
+    top: 3vw;
 }
 
 .menu-list {
     list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 2vw;
     padding-inline-start: 0;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: white;
+}
+
+.header img {
+    padding-left: 2vw;
+}
+
+.header ul {
+    margin: 0;
+}
+
+.home-container {
+    padding: 75vw 15vw;
+}
+
+.home-container h1, h2, p {
+    margin: 0;
+}
+
+.home-container h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+}
+
+.home-container h2 {
+    font-size: 8vw;
+}
+
+.home-container p {
+    letter-spacing: 1vw;
+}
+
+.home-container button {
+    margin-top: 5vw;
+    width: 37vw;
+    font-size: 4vw;
+    border-radius: 5vw;
+    padding: 3vw;
+    color: white;
+    background-color: #695aa6;
+    border-color: #695aa6;
+    border-style: none;
+    font-style: Verdana;
+    font-family: Verdana;
+    border: 2px solid blcak;
 }
 
 
@@ -26,12 +78,62 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .home {
-        background-position: top;
+        background-image: url('./../assets/background_small.jpg');
+    }
+
+    .header {
+        align-items: flex-start;
+        top: 10vw;
+        right: 10vw;
     }
 
     .menu-list {
         flex-direction: column;
+        font-size: 5vw;
     }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .menu-list {
+        font-size: 4vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .menu-list {
+        font-size: 4vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .menu-list {
+        font-size: 2vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .menu-list {
+        font-size: 2vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    
+}
+
+/* Ultra large devices */
+@media only screen and (min-width: 1500px) {
+    
 }
