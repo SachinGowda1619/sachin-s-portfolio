@@ -15,6 +15,7 @@
     top: 0;
     width: 100%;
     transition-duration: 0.5s;
+    z-index: 1;
 }
 
 .header {
@@ -42,6 +43,10 @@
     transition-duration: 0.5s;
 }
 
+.menu-item:hover {
+    cursor: pointer;
+}
+
 .menu-list-scrolled {
     color: #695aa6;
     transition-duration: 0.5s;
@@ -53,7 +58,7 @@
 }
 
 .home-container {
-    padding: 10vw 30vw;
+    padding: 5vw 30vw;
 }
 
 .home-container h1, h2, p {
@@ -63,18 +68,18 @@
 .home-container h1 {
     font-size: 6vw;
     line-height: 6vw;
-    color: #454647;
+    opacity: 0.7;
 }
 
 .home-container h2 {
     font-size: 4vw;
-    color: #585656;
+    opacity: 0.6;
 }
 
 .home-container p {
     letter-spacing: 0.75vw;
     font-size: 2vw;
-    color: #717070;
+    opacity: 0.5;
 }
 
 .home-container button {
@@ -94,9 +99,8 @@
     background-color: #584b8d;
 }
 
-
-.aedfaef {
-    font-size: 50px;
+.home-container button:focus {
+    outline: 3px solid #d2cbed;
 }
 
 @media only screen and (max-width: 768px) {
@@ -117,7 +121,6 @@
     .menu-list {
         flex-direction: column;
         font-size: 5vw;
-        transition-duration: 0s;
         position: fixed;
         top: calc(18vw + 0.2vw);
         background-color: white;
@@ -302,9 +305,4 @@
     .home-container {
         padding: 20vw 30vw;
     }
-}
-
-/* Ultra large devices */
-@media only screen and (min-width: 1500px) {
-    
 }

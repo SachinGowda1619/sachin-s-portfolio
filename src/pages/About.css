@@ -1,0 +1,172 @@
+.about {
+    display: flex;
+    padding: 5vw 12vw;
+}
+
+.about-left img {
+    height: 25vw;
+}
+
+.about-right {
+    padding: 2vw;
+}
+
+.about-description {
+    font-size: 1.2vw;
+    opacity: 0.6;
+}
+
+.about-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #695aa6;
+}
+
+.about-content {
+    font-size: 1.2vw;
+    opacity: 0.8;
+    line-height: 1.7vw;
+    padding-bottom: 2vw;
+}
+
+.about-right button {
+    font-size: 1vw;
+    font-family: Verdana;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border-style: none;
+    border: 1px solid #695aa6;
+    color: #695aa6;
+    background-color: white;
+    width: 8.5vw;
+}
+
+.about-right button:hover {
+    color: white;
+    background-color: #695aa6;
+    cursor: pointer;
+}
+
+.about-right button:focus {
+    outline: 3px solid #d2cbed;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left img {
+        height: 90vw;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+
+    .about-description {
+        font-size: 5vw;
+    }
+
+    .about-title {
+        font-size: 6vw;
+    }
+
+    .about-content {
+        font-size: 4vw;
+        line-height: 6vw;
+        padding: 2vw 0 10vw 0;
+    }
+
+    .about-right button {
+        font-size: 4vw;
+        padding: 2vw;
+        border-radius: 5vw;
+        width: 35vw;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .about {
+        padding: 5vw 2vw;
+    }
+
+    .about-left img {
+        height: 40vw;
+    }
+
+    .about-description {
+        font-size: 2vw;
+    }
+
+    .about-title {
+        font-size: 3vw;
+    }
+
+    .about-content {
+        font-size: 1.75vw;
+        line-height: 2.5vw;
+        padding-bottom: 4vw;
+    }
+
+    .about-right button {
+        font-size: 1.5vw;
+        padding: 1vw;
+        border-radius: 2vw;
+        width: 13vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .about {
+        padding: 5vw 5vw;
+    }
+
+    .about-left img {
+        height: 35vw;
+    }
+
+    .about-description {
+        font-size: 1.5vw;
+    }
+
+    .about-title {
+        font-size: 3vw;
+    }
+
+    .about-content {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        padding-bottom: 4vw;
+    }
+
+    .about-right button {
+        font-size: 1.25vw;
+        padding: 0.75vw;
+        border-radius: 2vw;
+        width: 11vw;
+    }
+}

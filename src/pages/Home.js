@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import './Home.css';
+import React, { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 
 const Home = () => {
