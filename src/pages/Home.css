@@ -27,8 +27,8 @@
     color: white;
 }
 
-.header img {
-    padding-left: 2vw;
+.header ul {
+    padding-right: 2vw;
 }
 
 .header ul {
@@ -36,7 +36,7 @@
 }
 
 .home-container {
-    padding: 75vw 15vw;
+    padding: 10vw 30vw;
 }
 
 .home-container h1, h2, p {
@@ -44,31 +44,34 @@
 }
 
 .home-container h1 {
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 6vw;
+    line-height: 6vw;
 }
 
 .home-container h2 {
-    font-size: 8vw;
+    font-size: 4vw;
 }
 
 .home-container p {
-    letter-spacing: 1vw;
+    letter-spacing: 0.75vw;
+    font-size: 2vw;
 }
 
 .home-container button {
-    margin-top: 5vw;
-    width: 37vw;
-    font-size: 4vw;
-    border-radius: 5vw;
-    padding: 3vw;
+    margin-top: 2vw;
+    width: 10vw;
+    font-size: 1vw;
+    border-radius: 2vw;
+    padding: 0.75vw;
     color: white;
     background-color: #695aa6;
     border-color: #695aa6;
     border-style: none;
-    font-style: Verdana;
     font-family: Verdana;
-    border: 2px solid blcak;
+}
+
+.home-container button:hover {
+    background-color: #584b8d;
 }
 
 
@@ -97,13 +100,71 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 400px) {
-    
+    .home-container {
+        padding: 80vw 20vw;
+    }
+
+    .home-container h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .home-container h2 {
+        font-size: 8vw;
+    }
+
+    .home-container p {
+        letter-spacing: 0.75vw;
+        font-size: 3.5vw;
+    }
+
+    .home-container button {
+        margin-top: 5vw;
+        width: 35vw;
+        font-size: 4vw;
+        border-radius: 5vw;
+        padding: 2vw;
+    }
+
+    .header ul {
+        padding-right: 4vw;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 400px) and (max-width: 600px) {
     .menu-list {
         font-size: 4vw;
+    }
+
+    .home-container {
+        padding: 45vw 20vw;
+    }
+
+    .home-container h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .home-container h2 {
+        font-size: 8vw;
+    }
+
+    .home-container p {
+        letter-spacing: 0.75vw;
+        font-size: 3.5vw;
+    }
+
+    .home-container button {
+        margin-top: 5vw;
+        width: 32vw;
+        font-size: 3.5vw;
+        border-radius: 5vw;
+        padding: 1.75vw;
+    }
+
+    .header ul {
+        padding-right: 4vw;
     }
 }
 
@@ -112,12 +173,64 @@
     .menu-list {
         font-size: 4vw;
     }
+
+    .home-container {
+        padding: 55vw 20vw;
+    }
+
+    .home-container h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .home-container h2 {
+        font-size: 8vw;
+    }
+
+    .home-container p {
+        letter-spacing: 0.75vw;
+        font-size: 3.5vw;
+    }
+
+    .home-container button {
+        margin-top: 5vw;
+        width: 32vw;
+        font-size: 3.5vw;
+        border-radius: 5vw;
+        padding: 1.75vw;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .menu-list {
         font-size: 2vw;
+    }
+
+    .home-container {
+        padding: 40vw 20vw;
+    }
+
+    .home-container h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .home-container h2 {
+        font-size: 8vw;
+    }
+
+    .home-container p {
+        letter-spacing: 0.75vw;
+        font-size: 3.5vw;
+    }
+
+    .home-container button {
+        margin-top: 5vw;
+        width: 32vw;
+        font-size: 3.5vw;
+        border-radius: 5vw;
+        padding: 1.75vw;
     }
 }
 
@@ -126,11 +239,25 @@
     .menu-list {
         font-size: 2vw;
     }
+
+    .home-container {
+        padding: 20vw 30vw;
+    }
+
+    .home-container button {
+        margin-top: 3vw;
+        width: 15vw;
+        font-size: 1.5vw;
+        border-radius: 2vw;
+        padding: 1vw;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-    
+    .home-container {
+        padding: 20vw 30vw;
+    }
 }
 
 /* Ultra large devices */

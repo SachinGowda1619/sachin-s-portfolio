@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
-import cross_image from './../assets/cross_white.svg'
+import React, { useEffect, useState } from 'react'
 import './Home.css';
+import Hamburger from 'hamburger-react';
 
 const Home = () => {
+
+    const [hamBurgerOpen, setHamBurgerOpen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,14 +28,16 @@ const Home = () => {
     <div className='home'>
         <div className='home-shadow'>
             <div className='header'>
-                <ul className='menu-list'>
-                    <li className='menu-item'>Home</li>
-                    <li className='menu-item'>About</li>
-                    <li className='menu-item'>Portfolio</li>
-                    <li className='menu-item'>Testmonial</li>
-                    <li className='menu-item'>Contact</li>
-                </ul>
-                <img src={cross_image} alt='Close'></img>
+                {hamBurgerOpen &&
+                    <ul className='menu-list'>
+                        <li className='menu-item'>Home</li>
+                        <li className='menu-item'>About</li>
+                        <li className='menu-item'>Portfolio</li>
+                        <li className='menu-item'>Testmonial</li>
+                        <li className='menu-item'>Contact</li>
+                    </ul>
+                }
+                <Hamburger toggled={hamBurgerOpen} toggle={setHamBurgerOpen} color='white'/>
             </div>
             <div className='home-container'>
                 <h2>
